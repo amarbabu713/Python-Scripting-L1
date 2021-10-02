@@ -1,0 +1,10 @@
+def abc(tg):
+    tg=abs(tg)
+    sum=0
+    step=0
+    while(sum<tg or (sum-tg)%2!=0):
+        step=step+1
+        sum=sum+step
+    return step
+
+print(abc(2))
