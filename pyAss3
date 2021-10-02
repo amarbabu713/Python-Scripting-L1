@@ -1,0 +1,15 @@
+ls=['mix','xyz','apple','xanadu','aardvark']
+
+def arr(ls):
+    ls1=[]
+    ls2=[]
+    ls3=[]
+    for a in ls:
+        b=list(a)
+        if b[0]=='x':
+            ls1.append(a)
+        else:
+            ls2.append(a)
+    return (sorted(ls1,reverse=False)+sorted(ls2,reverse=False))
+
+print(arr(ls))
