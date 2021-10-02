@@ -1,0 +1,18 @@
+str="Here you can pass sample string Here you can pass sample string1"
+ls=str.split(" ")
+dict={}
+for a in ls:
+    if a not in dict:
+        dict[a]=1
+    else:
+        dict[a]+=1
+
+print(dict)    # Dictonary
+
+sorted(dict)    # Sorting
+j=0
+for i in dict:   # printing top five elements
+    print(i,dict[i])
+    j+=1
+    if j==5:
+        break
