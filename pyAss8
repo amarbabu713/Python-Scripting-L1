@@ -1,0 +1,23 @@
+str2="Python is Python are Python was Python not Python yes Python no Python awesome Python abcd"
+def getDic(strn):
+    dic={}
+    wordList=strn.split()
+    length=len(wordList)
+    for index,word in enumerate(wordList):
+        if dic.has_key(word):
+            continue
+        tmpList=[]
+        for i in range(index,length):
+            if index==length-1:
+                break
+        if word==wordList[i]:
+            nextWord=wordList[i+1]
+            tmpList.append(nextWord)
+#print word,tmpList
+        dic[word]=tmpList
+    return dic
+def predict(strn,word):
+    wordDictionary=getDic(strn)
+    # print "in the given string, the word ' ",word,"' is likely followed by the list of words",wordDictionary[word]
+#call the function
+predict(str2,"Python")
