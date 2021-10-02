@@ -1,0 +1,6 @@
+ls=[1,1,2,2,3,3,3]
+ans=[]
+for x in ls:
+    if x not in ans:
+        ans.append(x)
+print(ans)
