@@ -1,0 +1,11 @@
+ls=['axa','xyz','gg','x','yyy']
+
+def arr(ls):
+    var=0
+    for a in ls:
+        if len(a) > 1:
+            b=list(a)
+            if b[0]==b[-1]:
+                var+=1
+    return var
+print(arr(ls))
