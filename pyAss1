@@ -1,0 +1,19 @@
+url = ['www.annauniv.edu','www.ndtv.com','www.website.org','www.bis.org.in','www.rbi.org.in','www.google.com']
+
+#  Domain=['edu','com','org','in']
+ans={}
+#    b=url.split('.')[-1]
+for a in url:
+    b=a.split('.')[-1]
+    if b=='edu':
+        ans[a]=1
+    elif b=='com':
+        ans[a]=2
+    elif b=='org':
+        ans[a]=3
+    else:
+        ans[a]=4
+
+ab=sorted(ans.items(),key=lambda x:x[1],reverse=False)
+for i in ab:
+    print(i[0])
